@@ -1,3 +1,3 @@
 output "id" {
-  value = "${aws_vpc.mod_vpc.id}"
+  value = "${aws_vpc.vpc.id}"
 }
