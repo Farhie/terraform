@@ -5,6 +5,5 @@ resource "aws_vpc" "vpc" {
     Name        = "${var.environment}-vpc"
     Type        = "VPC"
     Environment = "${var.environment}"
-    Monitoring  = "true"
   }
 }
