@@ -1,2 +1,2 @@
-variable "cidr_block" { }
-variable "environment" { }
+variable "cidr_block" {}
+variable "environment" {}

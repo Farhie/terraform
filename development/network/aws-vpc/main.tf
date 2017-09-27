@@ -1,6 +1,6 @@
 module "vpc" {
   source = "../../../modules/network/aws-vpc"
 
-  environment = "development"
-  cidr_block = "10.1.0.0/20"
+  environment = "${var.environment}"
+  cidr_block  = "${var.vpc_cidr}"
 }

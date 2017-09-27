@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-west-2"
-}
-
 environment = "development"
 
 region = "us-west-2"
