@@ -9,7 +9,7 @@ resource "aws_route_table" "public-route-table" {
 }
 
 resource "aws_route" "all-traffic-to-internet-gateway" {
-  route_table_id         = "${aws_route_table.public-route-table.id}"
-  destination_cidr_block = "0.0.0.0/0"
-  gateway_id             = "${var.internet_gateway_id}"
+  route_table_id = "${aws_route_table.public-route-table.id}"
+  cidr_block     = "0.0.0.0/0"
+  gateway_id     = "${var.internet_gateway_id}"
 }
