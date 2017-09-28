@@ -7,7 +7,7 @@ resource "aws_network_acl_rule" "http-egress" {
   cidr_block  = "0.0.0.0/0"
   from_port   = 80
   to_port     = 80
-  egress = true
+  egress      = true
 }
 
 resource "aws_network_acl_rule" "https-egress" {
@@ -19,7 +19,7 @@ resource "aws_network_acl_rule" "https-egress" {
   cidr_block  = "0.0.0.0/0"
   from_port   = 433
   to_port     = 433
-  egress = true
+  egress      = true
 }
 
 resource "aws_network_acl_rule" "non-root-ports-egress" {
@@ -31,7 +31,7 @@ resource "aws_network_acl_rule" "non-root-ports-egress" {
   cidr_block  = "0.0.0.0/0"
   from_port   = 1024
   to_port     = 65535
-  egress = true
+  egress      = true
 }
 
 resource "aws_network_acl_rule" "deny-all-other-egress" {
@@ -41,5 +41,5 @@ resource "aws_network_acl_rule" "deny-all-other-egress" {
   rule_number = 999
   rule_action = "deny"
   cidr_block  = "0.0.0.0/0"
-  egress = true
+  egress      = true
 }
