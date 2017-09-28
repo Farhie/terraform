@@ -4,4 +4,10 @@ variable "vpc_cidr" {}
 
 variable "environment" {}
 
-variable "internet_gateway_id" {}
+variable "az_to_nat_gateway_ids" {
+  type = "map"
+}
+
+variable "availability_zones" {
+  type="list"
+}

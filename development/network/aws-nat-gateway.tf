@@ -3,7 +3,7 @@ module "nat_gateway_eips" {
   availability_zones = "${var.availability_zones}"
 }
 
-module "public_nat_gateway" {
+module "nat_gateway" {
   source = "../../modules/network/aws-nat-gateway"
 
   allocation_id      = "${module.nat_gateway_eips.allocation_ids}"
