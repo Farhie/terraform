@@ -9,5 +9,5 @@ variable "az_to_nat_gateway_ids" {
 }
 
 variable "availability_zones" {
-  type="list"
+  type = "list"
 }

@@ -9,7 +9,7 @@ module "aws_public_route_table" {
 module "aws_private_route_table" {
   source                = "../../modules/network/aws-private-route-table"
   vpc_cidr              = "${var.vpc_cidr}"
-  availability_zones = "${var.availability_zones}"
+  availability_zones    = "${var.availability_zones}"
   az_to_nat_gateway_ids = "${module.nat_gateway.az_to_nat_gateway_ids}"
   vpc_id                = "${module.vpc.id}"
   environment           = "${var.environment}"
