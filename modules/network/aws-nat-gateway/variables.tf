@@ -1,4 +1,6 @@
-variable allocation_id {}
+variable allocation_ids {
+  type = "list"
+}
 
 variable environment {}
 

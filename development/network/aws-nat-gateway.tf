@@ -6,7 +6,7 @@ module "nat_gateway_eips" {
 module "nat_gateway" {
   source = "../../modules/network/aws-nat-gateway"
 
-  allocation_id      = "${module.nat_gateway_eips.allocation_ids}"
+  allocation_ids     = "${module.nat_gateway_eips.ids}"
   subnet_ids         = "${module.public_subnets.ids}"
   availability_zones = "${var.availability_zones}"
   environment        = "${var.environment}"

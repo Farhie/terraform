@@ -1,5 +1,5 @@
 output "ids" {
-  value = ["${aws_subnet.subnet.id}"]
+  value = "${aws_subnet.subnet.*.id}"
 }
 
 output "count" {
