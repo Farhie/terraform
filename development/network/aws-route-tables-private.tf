@@ -8,8 +8,8 @@ module "aws_private_route_table" {
 }
 
 module "aws_private_subnet_route_table_association" {
-  source         = "../../modules/network/aws-route-table-association-private"
-  route_table_ids = "${module.aws_private_route_table.ids}"
-  private_subnet_count   = "${module.private_subnets.count}"
-  private_subnet_ids     = "${module.private_subnets.ids}"
+  source               = "../../modules/network/aws-route-table-association-private"
+  route_table_ids      = "${module.aws_private_route_table.ids}"
+  private_subnet_count = "${module.private_subnets.count}"
+  private_subnet_ids   = "${module.private_subnets.ids}"
 }

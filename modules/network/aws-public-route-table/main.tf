@@ -9,7 +9,7 @@ resource "aws_route_table" "public_route_table" {
 }
 
 resource "aws_route" "egress_public_subnet_to_internet" {
-  route_table_id = "${aws_route_table.public_route_table.id}"
-  destination_cidr_block     = "0.0.0.0/0"
-  gateway_id = "${var.internet_gateway_id}"
+  route_table_id         = "${aws_route_table.public_route_table.id}"
+  destination_cidr_block = "0.0.0.0/0"
+  gateway_id             = "${var.internet_gateway_id}"
 }
