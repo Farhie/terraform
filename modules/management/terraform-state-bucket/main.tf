@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "terraform-state-bucket" {
   bucket = "${var.terraform_state_bucket}"
-  acl    = "private"
+  acl    = "${var.acl}"
   region = "${var.region}"
 
   tags {
