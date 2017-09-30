@@ -1,5 +1,5 @@
 resource "aws_cloudwatch_metric_alarm" "vpc_change_alarm" {
-  count               = "${var.monitored}"
+  count               = "${var.monitoring}"
   alarm_name          = "${var.environment}-vpc-attempted-change-alarm"
   comparison_operator = "GreaterThanOrEqualToThreshold"
   evaluation_periods  = "2"

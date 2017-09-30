@@ -1,6 +1,6 @@
 variable "cidr_block" {}
 variable "environment" {}
 
-variable "monitored" {
+variable "monitoring" {
   default = false
 }

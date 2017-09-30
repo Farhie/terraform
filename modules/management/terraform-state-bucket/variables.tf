@@ -7,3 +7,7 @@ variable "environment" {}
 variable "acl" {
   default = "private"
 }
+
+variable "monitoring" {
+  default = false
+}
