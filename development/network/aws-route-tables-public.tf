@@ -4,6 +4,7 @@ module "aws_public_route_table" {
   internet_gateway_id = "${module.internet_gateway.id}"
   vpc_id              = "${module.vpc.id}"
   environment         = "${var.environment}"
+  region              = "${var.region}"
 }
 
 module "aws_public_subnet_route_table_association" {

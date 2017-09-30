@@ -2,8 +2,9 @@ resource "aws_route_table" "public_route_table" {
   vpc_id = "${var.vpc_id}"
 
   tags {
-    Name        = "${var.environment}-public-route-table"
+    Name        = "${var.environment}-public-route-table-${var.region}"
     Type        = "VPC Route Table"
+    Region      = "${var.region}"
     Environment = "${var.environment}"
   }
 }

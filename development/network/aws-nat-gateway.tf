@@ -10,4 +10,5 @@ module "nat_gateway" {
   subnet_ids         = "${module.public_subnets.ids}"
   availability_zones = "${var.availability_zones}"
   environment        = "${var.environment}"
+  region             = "${var.region}"
 }

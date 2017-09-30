@@ -11,3 +11,5 @@ variable subnet_ids {
 variable "availability_zones" {
   type = "list"
 }
+
+variable "region" {}

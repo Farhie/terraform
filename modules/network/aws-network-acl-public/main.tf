@@ -5,7 +5,8 @@ resource "aws_network_acl" "public_network_acl" {
   tags {
     Name        = "${var.environment}-public-network-acl-${var.region}"
     Type        = "VPC Route Table"
+    Region      = "${var.region}"
     Environment = "${var.environment}"
-    Monitoring   = "${var.monitoring}"
+    Monitoring  = "${var.monitoring}"
   }
 }

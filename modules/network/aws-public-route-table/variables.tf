@@ -5,3 +5,5 @@ variable "vpc_cidr" {}
 variable "environment" {}
 
 variable "internet_gateway_id" {}
+
+variable "region" {}

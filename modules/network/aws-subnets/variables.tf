@@ -11,3 +11,5 @@ variable "availability_zones" {
 }
 
 variable "subnet_type" {}
+
+variable "region" {}

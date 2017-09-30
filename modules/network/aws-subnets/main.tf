@@ -7,6 +7,7 @@ resource "aws_subnet" "subnet" {
   tags {
     Name        = "${var.environment}-${var.subnet_type}-subnet-${element(var.availability_zones, count.index)}"
     Type        = "VPC Subnet"
+    Region      = "${var.region}"
     Environment = "${var.environment}"
   }
 }

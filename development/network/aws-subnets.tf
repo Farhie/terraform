@@ -6,6 +6,7 @@ module "public_subnets" {
   environment        = "${var.environment}"
   cidr_block_map     = "${var.public_subnet_cidrs}"
   availability_zones = "${var.availability_zones}"
+  region             = "${var.region}"
 }
 
 module "private_subnets" {
@@ -16,4 +17,5 @@ module "private_subnets" {
   environment        = "${var.environment}"
   cidr_block_map     = "${var.private_subnet_cidrs}"
   availability_zones = "${var.availability_zones}"
+  region             = "${var.region}"
 }

@@ -6,6 +6,7 @@ resource "aws_nat_gateway" "aws_gateway" {
   tags {
     Name        = "${var.environment}-nat-gateway-${element(var.availability_zones, count.index)}"
     Type        = "VPC Nat Gateway"
+    Region      = "${var.region}"
     Environment = "${var.environment}"
   }
 }
