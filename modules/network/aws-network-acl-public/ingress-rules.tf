@@ -1,4 +1,4 @@
-resource "aws_network_acl_rule" "http-ingress" {
+resource "aws_network_acl_rule" "http_ingress" {
   network_acl_id = "${aws_network_acl.public_network_acl.id}"
 
   protocol    = "tcp"
@@ -9,7 +9,7 @@ resource "aws_network_acl_rule" "http-ingress" {
   to_port     = 80
 }
 
-resource "aws_network_acl_rule" "https-ingress" {
+resource "aws_network_acl_rule" "https_ingress" {
   network_acl_id = "${aws_network_acl.public_network_acl.id}"
 
   protocol    = "tcp"
@@ -20,7 +20,7 @@ resource "aws_network_acl_rule" "https-ingress" {
   to_port     = 433
 }
 
-resource "aws_network_acl_rule" "non-root-ports-ingress" {
+resource "aws_network_acl_rule" "non_root_ports_ingress" {
   network_acl_id = "${aws_network_acl.public_network_acl.id}"
 
   protocol    = "tcp"
@@ -31,7 +31,7 @@ resource "aws_network_acl_rule" "non-root-ports-ingress" {
   to_port     = 65535
 }
 
-resource "aws_network_acl_rule" "deny-all-other-ingress" {
+resource "aws_network_acl_rule" "deny_all_other_ingress" {
   network_acl_id = "${aws_network_acl.public_network_acl.id}"
 
   protocol    = "all"

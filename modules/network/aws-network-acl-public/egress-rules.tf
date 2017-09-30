@@ -1,4 +1,4 @@
-resource "aws_network_acl_rule" "http-egress" {
+resource "aws_network_acl_rule" "http_egress" {
   network_acl_id = "${aws_network_acl.public_network_acl.id}"
 
   protocol    = "tcp"
@@ -10,7 +10,7 @@ resource "aws_network_acl_rule" "http-egress" {
   egress      = true
 }
 
-resource "aws_network_acl_rule" "https-egress" {
+resource "aws_network_acl_rule" "https_egress" {
   network_acl_id = "${aws_network_acl.public_network_acl.id}"
 
   protocol    = "tcp"
@@ -22,7 +22,7 @@ resource "aws_network_acl_rule" "https-egress" {
   egress      = true
 }
 
-resource "aws_network_acl_rule" "non-root-ports-egress" {
+resource "aws_network_acl_rule" "non_root_ports_egress" {
   network_acl_id = "${aws_network_acl.public_network_acl.id}"
 
   protocol    = "tcp"
@@ -34,7 +34,7 @@ resource "aws_network_acl_rule" "non-root-ports-egress" {
   egress      = true
 }
 
-resource "aws_network_acl_rule" "deny-all-other-egress" {
+resource "aws_network_acl_rule" "deny_all_other_egress" {
   network_acl_id = "${aws_network_acl.public_network_acl.id}"
 
   protocol    = "all"

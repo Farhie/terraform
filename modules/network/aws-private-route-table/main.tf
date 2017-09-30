@@ -1,4 +1,4 @@
-resource "aws_route_table" "private-route-table" {
+resource "aws_route_table" "private_route_table" {
   count  = "${length(var.availability_zones)}"
   vpc_id = "${var.vpc_id}"
 
