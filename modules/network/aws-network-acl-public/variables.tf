@@ -7,3 +7,7 @@ variable "environment" {}
 variable "public_subnet_ids" {
   type = "list"
 }
+
+variable "monitored" {
+  default = false
+}
