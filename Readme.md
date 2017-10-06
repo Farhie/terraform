@@ -4,7 +4,7 @@ Contained within is a Terraform project that provides a straightforward
 way to bring up numerous distributed environments across three availability zones 
 within an AWS region.
 
-##Prerequisites
+## Prerequisites
 
 You will need to:
 * Install [Terraform 0.10.6+](https://www.terraform.io) 
