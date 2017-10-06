@@ -15,3 +15,22 @@ Optional:
 It is an excellent IDE with support for [HashiCorp Configuration Language (HCL),](https://github.com/hashicorp/hcl) 
 Terraform's configuration syntax of choice.
 
+## Project Strcture
+
+TODO
+
+## Creating an Environment
+
+TODO
+
+## Destroying an Environment
+
+TODO
+
+## License
+
+TODO
+
+## Acknowledgments
+
+TODO
