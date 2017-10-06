@@ -2,11 +2,11 @@ resource "aws_network_acl_rule" "http_egress" {
   network_acl_id = "${aws_network_acl.public_network_acl.id}"
 
   protocol    = "tcp"
-  rule_number = 100
+  rule_number = "100"
   rule_action = "allow"
   cidr_block  = "0.0.0.0/0"
-  from_port   = 80
-  to_port     = 80
+  from_port   = "80"
+  to_port     = "80"
   egress      = true
 }
 
@@ -31,15 +31,5 @@ resource "aws_network_acl_rule" "non_root_ports_egress" {
   cidr_block  = "0.0.0.0/0"
   from_port   = 1024
   to_port     = 65535
-  egress      = true
-}
-
-resource "aws_network_acl_rule" "deny_all_other_egress" {
-  network_acl_id = "${aws_network_acl.public_network_acl.id}"
-
-  protocol    = "all"
-  rule_number = 999
-  rule_action = "deny"
-  cidr_block  = "0.0.0.0/0"
   egress      = true
 }
