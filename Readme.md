@@ -7,8 +7,8 @@ within an AWS region.
 ##Prerequisites
 
 You will need to:
-* Install[Terraform 0.10.6+](https://www.terraform.io) 
-* Setup an AWS account
+* Install [Terraform 0.10.6+](https://www.terraform.io) 
+* Setup an [AWS account](https://aws.amazon.com/account/)
 
 Optional:
 * If you are not wed to Vim/Nano/Emacs :wink: then I would highly recommend using [IntelliJ Community Edition](https://www.jetbrains.com/idea/download).
