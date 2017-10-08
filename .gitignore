@@ -1,4 +1,4 @@
 **/.terraform/*
-*/*.*.backup
+**/*.tfstate*
 .idea/workspace.xml
 .idea/tasks.xml
