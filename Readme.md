@@ -5,8 +5,13 @@ provides a straightforward way to provision an environment segregated at
 the VPC level, with a highly available load balancer fronting Nginx servers 
 distributed across three availability zones within the AWS 'us-west-2' region.
 
-![VPC](images/vpc.png)
-![Security Group Rules](images/security.png) 
+<p align="center">
+  <img src="images/vpc.png" style="max-width:500px"/>
+</p>
+
+<p align="center">
+  <img src="images/security.png" style="max-width:300px"/>
+</p>
 
 ## Prerequisites
 
